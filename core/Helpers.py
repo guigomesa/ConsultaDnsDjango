@@ -2,7 +2,7 @@ import socket
 import dns.resolver
 import os
 from enum import Enum
-from core import models
+from . import models
 
 class TipoConsulta(Enum):
     Mx = 'MX'
