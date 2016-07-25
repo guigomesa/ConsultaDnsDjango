@@ -1,0 +1,62 @@
+{% extends "Layout.html" %}
+
+{% block titulo-pagina %}
+    Consulta Dns Onlinesites
+{% endblock %}
+
+{% block content %}
+<h1>Consulta para o domínio {{ dominio.Dominio | upper }}</h1>
+    <p>Está online:
+        {% if dominio.SiteEstaOnline %}
+            Sim
+        {% else %}
+            Não
+        {% endif %}
+    </p>
+
+    <div class="clearfix"></div>
+    <h2>MX para {{ dominio.Dominio }}</h2>
+    <ul>
+        {% for item in dominio.EmailMx %}
+        <li>{{ item.Host }} Está online
+            {% if item.EstaOnline %}
+                Sim
+            {% else %}
+                Não
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    <div class="clearfix"></div>
+    <h2>Dns de email</h2>
+    <ul>
+        {% for item in dominio.EmailDns %}
+        <li>{{ item.Host }} Está online
+            {% if item.EstaOnline %}
+                Sim
+            {% else %}
+                Não
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    <div class="clearfix"></div>
+    <h2>Nameservers</h2>
+    <ul>
+        {% for item in dominio.NameServers %}
+        <li>{{ item.Host }} Está online
+            {% if item.EstaOnline %}
+                Sim
+            {% else %}
+                Não
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
+

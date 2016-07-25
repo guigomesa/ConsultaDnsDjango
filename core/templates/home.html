@@ -1,0 +1,21 @@
+{% extends "Layout.html" %}
+
+{% block titulo-pagina %}
+    Consulta Dns Onlinesites
+{% endblock %}
+
+{% block content %}
+<h1>Consulta de dns</h1>
+
+     <p>Consulte o status de um domínio</p>
+<form method="POST" action="/consulta">
+     {% csrf_token %}
+  <div class="form-group">
+    <label for="dominio">Domínio</label>
+    <input type="text" class="form-control" id="dominio" name="dominio" placeholder="Domínio">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+{% endblock %}
+
