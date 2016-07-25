@@ -1,5 +1,5 @@
 from django.db import models
-from . import Helpers
+from core import Helpers
 
 
 
