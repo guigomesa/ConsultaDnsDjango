@@ -73,6 +73,8 @@ TEMPLATES = [
     },
 ]
 
+ALLOWED_HOSTS = ['localhost']
+
 WSGI_APPLICATION = 'ConsultaDns.wsgi.application'
 
 
