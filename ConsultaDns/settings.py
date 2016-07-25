@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'consultadnsols.herokuapp.com']
 
 WSGI_APPLICATION = 'ConsultaDns.wsgi.application'
 
