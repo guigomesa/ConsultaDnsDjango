@@ -1,6 +1,6 @@
 decorator==4.4.2
 Django==1.9.8
-dnspython==1.14.0
+dnspython==1.16.0
 gunicorn==20.0.4
 pexpect==4.2.0
 pickleshare==0.7.3
@@ -9,6 +9,6 @@ ptyprocess==0.5.1
 Pygments==2.6.1
 simplegeneric==0.8.1
 six==1.10.0
-traitlets==4.2.2
+traitlets==4.3.3
 wcwidth==0.1.7
 whitenoise==3.2
