@@ -9,6 +9,6 @@ ptyprocess==0.6.0
 Pygments==2.7.2
 simplegeneric==0.8.1
 six==1.15.0
-traitlets==4.3.3
+traitlets==5.0.5
 wcwidth==0.2.5
 whitenoise==5.2.0
